@@ -1,0 +1,50 @@
+---
+import orderedItems from "../../mockData/default.json";
+
+export const partial = true;
+---
+
+<table class="min-w-full border-collapse border border-gray-300">
+  <thead class="bg-gray-200">
+    <tr>
+      <th class="border border-gray-300 px-4 py-2">Item</th>
+      <th class="border border-gray-300 px-4 py-2">Price</th>
+      <th class="border border-gray-300 px-4 py-2">Quantity</th>
+      <th class="border border-gray-300 px-4 py-2">$ / Person</th>
+      <th class="border border-gray-300 px-4 py-2">Justin</th>
+      <th class="border border-gray-300 px-4 py-2">Janay</th>
+      <th class="border border-gray-300 px-4 py-2">Sunny</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      orderedItems.map((orderedItem) => {
+        return (
+          <tr>
+            <td class="border border-gray-300 px-4 py-2">
+              {orderedItem.menuItem}
+            </td>
+            <td class="border border-gray-300 px-4 py-2">
+              {orderedItem.price}
+            </td>
+            <td class="border border-gray-300 px-4 py-2">
+              {orderedItem.quantity}
+            </td>
+            <td class="border border-gray-300 px-4 py-2">
+              {orderedItem.dollarsPerPerson}
+            </td>
+            <td class="border border-gray-300 px-4 py-2">
+              {orderedItem.justin}
+            </td>
+            <td class="border border-gray-300 px-4 py-2">
+              {orderedItem.janay}
+            </td>
+            <td class="border border-gray-300 px-4 py-2">
+              {orderedItem.sunny}
+            </td>
+          </tr>
+        );
+      })
+    }
+  </tbody>
+</table>

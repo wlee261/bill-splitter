@@ -1,0 +1,47 @@
+[
+  {
+    "menuItem": "Burger",
+    "price": 10.99,
+    "quantity": 2,
+    "dollarsPerPerson": 5.5,
+    "justin": "Yes",
+    "janay": "No",
+    "sunny": "Yes"
+  },
+  {
+    "menuItem": "Pizza",
+    "price": 15.49,
+    "quantity": 1,
+    "dollarsPerPerson": 15.49,
+    "justin": "No",
+    "janay": "Yes",
+    "sunny": "No"
+  },
+  {
+    "menuItem": "Salad",
+    "price": 8.99,
+    "quantity": 3,
+    "dollarsPerPerson": 3.0,
+    "justin": "Yes",
+    "janay": "Yes",
+    "sunny": "No"
+  },
+  {
+    "menuItem": "Pasta",
+    "price": 12.99,
+    "quantity": 2,
+    "dollarsPerPerson": 6.5,
+    "justin": "No",
+    "janay": "No",
+    "sunny": "Yes"
+  },
+  {
+    "menuItem": "Soda",
+    "price": 1.99,
+    "quantity": 5,
+    "dollarsPerPerson": 0.4,
+    "justin": "Yes",
+    "janay": "Yes",
+    "sunny": "Yes"
+  }
+]
