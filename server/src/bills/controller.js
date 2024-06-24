@@ -22,7 +22,6 @@ const getBillById = async (req, res) => {
     const splitters = splittersQuery.rows;
 
     const billAndSplittersInformation = { billInformation, splitters };
-
     res.render('./bill/index', billAndSplittersInformation);
   } catch (error) {
     console.error('Error fetching bill details:', error);

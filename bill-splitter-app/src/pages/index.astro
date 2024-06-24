@@ -6,6 +6,7 @@ import orderedItems from "../mockData/default.json";
 <Layout title="Bill Splitter">
   <main class="flex flex-col items-center">
     <h1 class="text-7xl my-5">Bill Splitter</h1>
-	<div hx-post="/partials/bill-split-table/" hx-trigger="load" hx-replace="outerHTML"></div>
+	<div hx-get="http://localhost:3000/api/v1/bills/1" hx-trigger="load" hx-replace="innerHTML"></div>
   </main>
 </Layout>
+

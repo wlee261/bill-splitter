@@ -5,6 +5,7 @@ html
     table
       thead
         tr
+          th Actions
           th Menu Item
           th Price
           th Quantity
@@ -13,6 +14,9 @@ html
       tbody
         each item in billInformation
           tr
+            td
+              button Edit 
+              button Delete
             td= item.item
             td= item.price
             td= item.qty
