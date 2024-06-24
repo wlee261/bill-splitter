@@ -17,7 +17,10 @@ WHERE
 GROUP BY
     bi.item, bi.price, bi.qty;`;
 
+const getAllSplittersByBillId = 'SELECT name FROM splitters WHERE bill_id = $1';
+
 module.exports = {
   getAllBills,
   getBillById,
+  getAllSplittersByBillId,
 };

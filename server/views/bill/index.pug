@@ -1,0 +1,20 @@
+html
+  head
+    title Bill Splitter
+  body
+    table
+      thead
+        tr
+          th Menu Item
+          th Price
+          th Quantity
+          each splitter in splitters
+            th= splitter.name
+      tbody
+        each item in billInformation
+          tr
+            td= item.item
+            td= item.price
+            td= item.qty
+            each splitter in splitters
+              td= item.splitters.includes(splitter.name) ? 1 : 0
